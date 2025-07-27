@@ -2,7 +2,7 @@ name: Testes de unidade com pytest
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   test:
