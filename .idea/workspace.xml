@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust ubuntu" />
+    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust python version">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-tests.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753652007182</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adjust python version">
+      <option name="closed" value="true" />
+      <created>1753652087527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753652087527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +245,7 @@
     <MESSAGE value="test CI" />
     <MESSAGE value="test CI adjust" />
     <MESSAGE value="adjust ubuntu" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust ubuntu" />
+    <MESSAGE value="adjust python version" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust python version" />
   </component>
 </project>
