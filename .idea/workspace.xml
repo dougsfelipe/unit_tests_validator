@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="add test class">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/python-tests.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/requirements.txt" afterDir="false" />
+    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="add CI">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,11 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dougl\Desktop\teste unitarios\projeto1" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python tests.Python tests for test_validator.test_validar_cep_invalido">
     <configuration name="validator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="projeto1" />
@@ -180,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753651470509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add CI">
+      <option name="closed" value="true" />
+      <created>1753651639351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753651639351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +209,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add unit test cases" />
     <MESSAGE value="add test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test class" />
+    <MESSAGE value="add CI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CI" />
   </component>
 </project>
