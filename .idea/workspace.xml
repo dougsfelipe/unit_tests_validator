@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust python version">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753652087527</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adjust python version">
+      <option name="closed" value="true" />
+      <created>1753652153691</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753652153691</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adjust python version">
+      <option name="closed" value="true" />
+      <created>1753652158737</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753652158737</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
