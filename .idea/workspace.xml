@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust python version">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-tests.yml" afterDir="false" />
+    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/validator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,11 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for test_validator.test_entrada_valida_cep.executor": "Run",
     "Python tests.Python tests for test_validator.test_validar_cep_invalido.executor": "Run",
+    "Python tests.Python tests for test_validator.test_validar_cnpj_formato_invalido.executor": "Run",
+    "Python tests.Python tests for test_validator.test_validar_cnpj_formatoinvalido.executor": "Run",
+    "Python tests.Python tests for test_validator.test_validar_cnpj_invalido.executor": "Run",
     "Python tests.Python tests for test_validator.test_validar_cpf_invalido.executor": "Run",
+    "Python tests.Python tests for test_validator.test_validar_cpf_valido.executor": "Run",
     "Python tests.Python tests in test_validator.py.executor": "Run",
     "Python.validator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,30 +66,8 @@
       <recent name="C:\Users\dougl\Desktop\teste unitarios\projeto1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_validator.test_validar_cep_invalido">
-    <configuration name="validator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projeto1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_validator.test_entrada_valida_cep" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_validator.test_validar_cnpj_formato_invalido">
+    <configuration name="Python tests for test_validator.test_validar_cnpj_formato_invalido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="projeto1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,11 +78,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validator.test_entrada_valida_cep&quot;" />
+      <option name="_new_target" value="&quot;test_validator.test_validar_cnpj_formato_invalido&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_validator.test_validar_cep_invalido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_validator.test_validar_cnpj_formatoinvalido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="projeto1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,11 +93,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validator.test_validar_cep_invalido&quot;" />
+      <option name="_new_target" value="&quot;test_validator.test_validar_cnpj_formatoinvalido&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_validator.test_validar_cpf_invalido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_validator.test_validar_cnpj_invalido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="projeto1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +108,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validator.test_validar_cpf_invalido&quot;" />
+      <option name="_new_target" value="&quot;test_validator.test_validar_cnpj_invalido&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_validator.test_validar_cpf_valido" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="projeto1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_validator.test_validar_cpf_valido&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -146,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cep_invalido" />
-        <item itemvalue="Python tests.Python tests for test_validator.test_entrada_valida_cep" />
+        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cnpj_formato_invalido" />
+        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cnpj_formatoinvalido" />
+        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cnpj_invalido" />
         <item itemvalue="Python tests.Python tests in test_validator.py" />
-        <item itemvalue="Python.validator" />
-        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cpf_invalido" />
+        <item itemvalue="Python tests.Python tests for test_validator.test_validar_cpf_valido" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753652158737</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adjust yml">
+      <option name="closed" value="true" />
+      <created>1753652306477</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753652306477</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +269,18 @@
     <MESSAGE value="test CI adjust" />
     <MESSAGE value="adjust ubuntu" />
     <MESSAGE value="adjust python version" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust python version" />
+    <MESSAGE value="adjust yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust yml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_validator.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

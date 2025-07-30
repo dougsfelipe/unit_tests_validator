@@ -1,29 +1,67 @@
 import pytest
-from validator import validar_cpf, validar_cep, validar_cnpj
+from validator import Validator
+
+@pytest.fixture
+def validar():
+    return Validator()
+
+@pytest.mark.parametrize("cpf_valido", [
+    "529.982.247-25",
+    "52998224725",
+    "123.456.789-09"
+])
+
+def test_validar_cpf_valido(validar,cpf_valido):
+    assert validar.validar_cpf(cpf_valido) == True
+
+@pytest.mark.parametrize("cpf_invalido", [
+    "11111111111",
+    "12345678900",
+    "000.000.000-00",
+    "529.982.247",
+    "abcdefghijk",
+
+])
+
+def test_validar_cpf_invalido(validar, cpf_invalido):
+    assert validar.validar_cpf(cpf_invalido) == False
+
+@pytest.mark.parametrize("cpf_formato_invalido", [
+    52998224725,
+    52998224725,
+    12345678909
+])
+
+def test_validar_cpf_formato_invalido(validar, cpf_formato_invalido):
+    with pytest.raises(ValueError):
+        validar.validar_cpf(cpf_formato_invalido)
 
 
+@pytest.mark.parametrize("cep_valido", [
+    "12345-678",
+    "12345678"
+])
 
-def test_validar_cpf_valido():
-    assert validar_cpf("529.982.247-25") == True
-    assert validar_cpf("52998224725") == True
-    assert validar_cpf("123.456.789-09") == True
+def test_validar_cep_valido(validar,cep_valido):
+    assert validar.validar_cep(cep_valido) == True
 
-def test_validar_cpf_invalido():
-    assert validar_cpf("11111111111") == False
-    assert validar_cpf("12345678900") == False
-    assert validar_cpf("529.982.247") == False
-    assert validar_cpf("abcdefghijk") == False
-    assert validar_cpf("000.000.000-00") == False
-    assert validar_cpf("") == False
+@pytest.mark.parametrize("cep_invalido", [
+    "1234-567",
+    "12.345-678"
+])
 
-def test_validar_cep_valido():
-    assert validar_cep("12345-678") == True
-    assert validar_cep("12345678") == True
+def test_validar_cep_invalido(cep_invalido, validar):
+    assert validar.validar_cep(cep_invalido) == False
 
+@pytest.mark.parametrize("cep_formato_invalido", [
+    12345678,
+    12345678
+])
 
-def test_entrada_valida_cep():
-    assert validar_cep("1234-567") == False
-    assert validar_cep("12.345-678") == False
+def test_validar_cep_formato_invalido(validar, cep_formato_invalido):
+    with pytest.raises(ValueError):
+        validar.validar_cpf(cep_formato_invalido)
+
 
 
 @pytest.mark.parametrize("cnpj_valido", [
@@ -32,8 +70,8 @@ def test_entrada_valida_cep():
     "11.222.333/0001-81"  # válido fictício
 ])
 
-def test_validar_cnpj_valido(cnpj_valido):
-    assert validar_cnpj(cnpj_valido) == True
+def test_validar_cnpj_valido(cnpj_valido,validar):
+    assert validar.validar_cnpj(cnpj_valido) == True
 
 @pytest.mark.parametrize("cnpj_invalido", [
     "00.000.000/0000-00",   # repetido
@@ -44,6 +82,16 @@ def test_validar_cnpj_valido(cnpj_valido):
     "",                     # vazio
 ])
 
-def test_validar_cnpj_invalido(cnpj_invalido):
-    assert validar_cnpj(cnpj_invalido) == False
+def test_validar_cnpj_invalido(cnpj_invalido,validar):
+    assert validar.validar_cnpj(cnpj_invalido) == False
+
+@pytest.mark.parametrize("cnpj_formato_invalido", [
+    11111111111111,
+    12345678000100,
+    14252011000110
+])
+
+def test_validar_cnpj_formato_invalido(validar, cnpj_formato_invalido):
+    with pytest.raises(ValueError):
+        validar.validar_cnpj(cnpj_formato_invalido)
 
