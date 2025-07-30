@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="adjust yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/validator.py" afterDir="false" />
+    <list default="true" id="ed4bc9fc-a76b-47f4-9b35-a0331fe8cd27" name="Changes" comment="add fixtexture e parametrize">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753652306477</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add fixtexture e parametrize">
+      <option name="closed" value="true" />
+      <created>1753890123837</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753890123837</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +276,8 @@
     <MESSAGE value="adjust ubuntu" />
     <MESSAGE value="adjust python version" />
     <MESSAGE value="adjust yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust yml" />
+    <MESSAGE value="add fixtexture e parametrize" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixtexture e parametrize" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
