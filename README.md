@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/dougsfelipe/unit_tests_validator/actions/workflows/python-tests.yml/badge.svg)
 
-Este projeto contém funções em Python com testes automatizados usando **Pytest** e integração contínua via **GitHub Actions**.
+Este projeto contém funções em Python com testes unitarios automatizados usando **Pytest** e integração contínua via **GitHub Actions** feito por Douglas Felipe Candido dos Santos e  João Matheus Alves Ferreira.
 
 ---
 
