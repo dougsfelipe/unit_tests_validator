@@ -8,7 +8,7 @@ class Validator:
         if not isinstance(cpf, str):
             raise ValueError("CPF deve ser uma string")
 
-        cpf = re.sub(r'\D', '', cpf) #expressao regular para deixar somente os numeros
+        cpf = re.sub(r'\D', '', cpf) 
 
         def calcular_digito_cpf(cpf_parcial, peso):
             soma = sum(int(digito) * (peso - i) for i, digito in enumerate(cpf_parcial))
@@ -21,7 +21,7 @@ class Validator:
         if len(cpf) != 11:
             return  False
 
-        if cpf == cpf[0] * 11:  # CPF com todos os dígitos iguais é inválido
+        if cpf == cpf[0] * 11: 
             return False
 
         return cpf[-2:] == digitoV1 + digitoV2
@@ -36,7 +36,7 @@ class Validator:
         if len(cep_limpo) != 8:
             return False
 
-        # Regex aceita '12345678' ou '12345-678'
+        
         return bool(re.fullmatch(r"\d{5}-?\d{3}", cep))
 
     @staticmethod
