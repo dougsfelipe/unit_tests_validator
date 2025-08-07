@@ -23,6 +23,9 @@ Os testes são escritos com [Pytest](https://docs.pytest.org/) e são executados
 
 ### ✅ Rodar os testes localmente:
 
+![Print dos resultados](./unit_test_results.png)
+
 ```bash
 pip install -r requirements.txt
 pytest 
+
